@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>4</LangVersion>
@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{742B1BCE-2568-9DC0-3360-F0FA47AF21E9}</ProjectGuid>
+    <ProjectGuid>{29804B49-C24E-4182-CB66-2077B889E363}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -65,16 +65,16 @@
     <Compile Include="Assets\Scripts\MoveAlong.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Leonardo/Documents/E-Waste Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Leonardo/Documents/jogo-ewaste/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Leonardo/Documents/E-Waste Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Leonardo/Documents/jogo-ewaste/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Leonardo/Documents/E-Waste Game/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Leonardo/Documents/jogo-ewaste/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Leonardo/Documents/E-Waste Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Leonardo/Documents/jogo-ewaste/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -257,7 +257,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Unity.Settings">
-      <HintPath>C:/Users/Leonardo/Documents/E-Waste Game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+      <HintPath>C:/Users/Leonardo/Documents/jogo-ewaste/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
