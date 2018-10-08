@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class Collect : MonoBehaviour
 {
-    public string colliderTag;
+    //public string colliderTag;
+    public GameObject textObject;
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == colliderTag)
+        int temp = textObject.GetComponent<CanvasTextUpdate>().totalAmount;
+        string tag = collider.tag;
+
+        if (tag == "Collectible")
         {
             collider.gameObject.GetComponent<SummonAnimation>().Summon();
+            textObject.GetComponent<CanvasTextUpdate>().totalAmount = temp + 1;
             Destroy(collider.gameObject);
+        }
+        if (tag == "Recycler")
+        {
+            collider.gameObject.GetComponent<SummonAnimation>().Summon();
+            textObject.GetComponent<CanvasTextUpdate>().RetrieveAllPieces();
         }
     }
 }
