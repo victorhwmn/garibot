@@ -11,10 +11,15 @@ public class LevelChanger : MonoBehaviour {
         SceneManager.LoadScene(sceneIndex);
     }
 
-    // Fade before loading (needs LevelChanger prefab)
+    // Fades before loading (needs LevelChanger prefab)
     public void FadeToScene (int sceneIndex) {
         sceneToLoad = sceneIndex;
         animator.SetTrigger("FadeOut");
+    }
+
+    // Fades before loading next scene (needs LevelChanger prefab)
+    public void FadeToNextScene() {
+        FadeToScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void OnFadeComplete() {
