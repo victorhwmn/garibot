@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D cc;
     public Animator animator;
+    public AudioSource audioSource;
     public float rSpeed = 40f; //Run Speed
 
     private float hMove = 0f; //Horizontal Move
@@ -20,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = true;
             animator.SetBool("Jumping", true);
+            audioSource.Play();
         }
 
         animator.SetFloat("Speed", Mathf.Abs(hMove));

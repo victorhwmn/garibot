@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Collectible
   - Recycler
+  - FinalCollectible
+  - BackgroundMusic
+  - MenuMusic
   layers:
   - Default
   - TransparentFX
