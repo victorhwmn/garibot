@@ -6,6 +6,7 @@ public class Collect : MonoBehaviour
 {
     //public string colliderTag;
     public GameObject textObject;
+    public GameObject bar;
     void OnTriggerEnter2D(Collider2D collider)
     {
         int temp = textObject.GetComponent<CanvasTextUpdate>().totalAmount;
@@ -16,6 +17,8 @@ public class Collect : MonoBehaviour
             collider.gameObject.GetComponent<SummonAnimation>().Summon();
             textObject.GetComponent<CanvasTextUpdate>().totalAmount = temp + 1;
             Destroy(collider.gameObject);
+            bar.GetComponent<Progress>().IncrementTotal();
+            //Debug.Log(bar.GetComponent<Progress>().totalAmount);
         }
         if (tag == "Recycler")
         {
