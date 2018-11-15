@@ -4535,6 +4535,11 @@ Prefab:
       propertyPath: loader
       value: 
       objectReference: {fileID: 1613831450}
+    - target: {fileID: 114067093065273134, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: loader
+      value: 
+      objectReference: {fileID: 1613831450}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
   m_IsPrefabAsset: 0

@@ -11,7 +11,11 @@ public class CanvasTextUpdate : MonoBehaviour
 
     void Start()
     {
-        gm = GameObject.Find("Manager").GetComponent<Game_Manager>();
+        GameObject g = GameObject.Find("Manager");
+        if (g == null)
+            Debug.Log("Não há um objeto chamado Manager na cena!");
+        else
+            gm = g.GetComponent<Game_Manager>();
     }
 
     // Update is called once per frame
