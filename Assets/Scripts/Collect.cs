@@ -5,24 +5,28 @@ using UnityEngine;
 public class Collect : MonoBehaviour
 {
     //public string colliderTag;
-    public GameObject textObject;
-    public GameObject bar;
+    private Game_Manager gm;
+
+    void Start()
+    {
+        gm = GameObject.Find("Manager").GetComponent<Game_Manager>();
+    }
+
     void OnTriggerEnter2D(Collider2D collider)
     {
-        int temp = textObject.GetComponent<CanvasTextUpdate>().totalAmount;
+        //int temp = gm.GetTotalAmount();
         string tag = collider.tag;
 
         if (tag == "Collectible")
         {
             collider.gameObject.GetComponent<SummonAnimation>().Summon();
-            textObject.GetComponent<CanvasTextUpdate>().totalAmount = temp + 1;
-            bar.GetComponent<Progress>().IncrementTotal();
+            gm.IncrementTotal();
             Destroy(collider.gameObject);
         }
         if (tag == "Recycler")
         {
             collider.gameObject.GetComponent<SummonAnimation>().Summon();
-            textObject.GetComponent<CanvasTextUpdate>().RetrieveAllPieces();
+            gm.RetrieveAllPieces();
         }
     }
 }
