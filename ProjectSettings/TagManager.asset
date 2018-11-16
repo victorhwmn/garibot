@@ -9,6 +9,7 @@ TagManager:
   - FinalCollectible
   - BackgroundMusic
   - MenuMusic
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -21,8 +22,8 @@ TagManager:
   - Tiles
   - Player
   - Collectibles
-  - 
-  - 
+  - Bullets
+  - Enemy
   - 
   - 
   - 

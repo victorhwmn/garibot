@@ -23,7 +23,8 @@ GameObject:
   - component: {fileID: 60638050285375196}
   - component: {fileID: 50830897677528076}
   - component: {fileID: 114589208232598862}
-  m_Layer: 0
+  - component: {fileID: 114354089636354278}
+  m_Layer: 11
   m_Name: EMP Grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,6 +101,18 @@ PolygonCollider2D:
       - {x: 0.46959877, y: -0.38150454}
       - {x: 0.46351862, y: 0.22525501}
       - {x: 0.36581135, y: 0.32685137}
+--- !u!114 &114354089636354278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095779020797048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473fc9497fab2e44a88415ab9c014815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 5
 --- !u!114 &114589208232598862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -111,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46b664a2ae633be47a1b440c615d8347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchForce: 10
 --- !u!212 &212811474549259008
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -145,7 +159,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 0b3bfb91f2306f841a18ac9c18eebb6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -4,17 +4,25 @@ using UnityEngine;
 
 public class GrenadeMovement : MonoBehaviour
 {
-    public float launchForce = 10f;
-    // Use this for initialization
+    //public float launchForce = 10f;
+    //// Use this for initialization
     //void Awake ()
     //{
     //    Vector3 r = gameObject.transform.rotation.eulerAngles;
     //    gameObject.GetComponent<Rigidbody2D>().AddForce(
     //        new Vector2(launchForce * r.x, launchForce * r.y), ForceMode2D.Impulse);
     //}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Collider2D collider = collision.collider;
+        string tag = collider.tag;
+
+        //Debug.Log(tag);
+
+        if (tag == "Enemy")
+        {
+            collider.gameObject.GetComponent<EnemyAI>().Die();
+        }
+    }
 }
