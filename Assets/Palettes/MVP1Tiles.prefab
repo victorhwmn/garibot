@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4692920234726606}
   - component: {fileID: 2569400266438212316}
   m_Layer: 31
-  m_Name: New Palette
+  m_Name: MVP1Tiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
