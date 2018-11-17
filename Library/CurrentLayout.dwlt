@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 271}
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
-  controlID: 73
+  controlID: 71
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -155,7 +155,7 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 767
-  m_MinSize: {x: 681, y: 492}
+  m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 1
   controlID: 10
@@ -179,7 +179,7 @@ MonoBehaviour:
     y: 0
     width: 1440
     height: 767
-  m_MinSize: {x: 681, y: 492}
+  m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
   controlID: 11
@@ -203,7 +203,7 @@ MonoBehaviour:
     y: 0
     width: 1145
     height: 767
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 14006, y: 14042}
   vertical: 1
   controlID: 12
@@ -227,8 +227,8 @@ MonoBehaviour:
     y: 0
     width: 1145
     height: 496
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
   controlID: 13
 --- !u!114 &11
@@ -249,8 +249,8 @@ MonoBehaviour:
     y: 0
     width: 260
     height: 496
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -440,23 +440,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b057f7ff
-    m_LastClickedID: -567376
-    m_ExpandedIDs: 54faffff5afaffff96faffffecfafffff6faffff00000000e0350000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: eafaffffecfafffff6faffff00000000ea350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Monitor(Clone)
-      m_OriginalName: Monitor(Clone)
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -349842
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -497,9 +497,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.5, y: -4, z: 0}
+    m_Target: {x: 3.2410944, y: -1.0754052, z: 0}
     speed: 2
-    m_Value: {x: 2.5, y: -4, z: 0}
+    m_Value: {x: 3.2410944, y: -1.0754052, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -531,9 +531,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.381846
+    m_Target: 9.165929
     speed: 2
-    m_Value: 8.381846
+    m_Value: 9.165929
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -660,7 +660,8 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Prefabs
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders: []
@@ -672,7 +673,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: f8090000
     m_LastClickedID: 2552
-    m_ExpandedIDs: 00000000cc2600001e2c00009e2c0000e02d0000962e0000fa2e0000c82f00007c30000094300000d830000064310000123200005634000072340000a43400006637000068370000
+    m_ExpandedIDs: 00000000cc260000202c0000e62d00009c2e0000d22f0000863000009e300000e23000006e3100001c320000603400007c340000ae340000883700008a370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -697,10 +698,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 61}
+    scrollPos: {x: 0, y: 60}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000cc2600001e2c0000e02d0000962e0000c82f00007c30000094300000d830000064310000123200005634000072340000a43400006637000068370000
+    m_ExpandedIDs: ffffffff00000000cc260000202c0000e62d00009c2e0000002f0000d22f0000863000009e300000e23000006e3100001c320000603400007c340000ae340000883700008a370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -808,7 +809,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -47912
+  m_LastSelectedObjectID: -169332
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52

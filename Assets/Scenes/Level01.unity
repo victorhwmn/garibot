@@ -1876,6 +1876,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &629285368
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1889904862}
+    m_Modifications:
+    - target: {fileID: 4377520931575276, guid: dc55070a27face0469c71f9279f5b10c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377520931575276, guid: dc55070a27face0469c71f9279f5b10c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377520931575276, guid: dc55070a27face0469c71f9279f5b10c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377520931575276, guid: dc55070a27face0469c71f9279f5b10c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377520931575276, guid: dc55070a27face0469c71f9279f5b10c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377520931575276, guid: dc55070a27face0469c71f9279f5b10c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377520931575276, guid: dc55070a27face0469c71f9279f5b10c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377520931575276, guid: dc55070a27face0469c71f9279f5b10c, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc55070a27face0469c71f9279f5b10c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &629285369 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4377520931575276, guid: dc55070a27face0469c71f9279f5b10c,
+    type: 2}
+  m_PrefabInternal: {fileID: 629285368}
 --- !u!1 &685883144
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,6 +3053,7 @@ Transform:
   - {fileID: 685883145}
   - {fileID: 1533697052}
   - {fileID: 798566396}
+  - {fileID: 629285369}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
