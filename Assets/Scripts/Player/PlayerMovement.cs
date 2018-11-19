@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D cc;
     public Animator animator;
     public AudioSource audioSource;
+    public PlayerLifeController playerLife;
     public float rSpeed = 40f; //Run Speed
 
     private float hMove = 0f; //Horizontal Move
@@ -14,37 +15,36 @@ public class PlayerMovement : MonoBehaviour
     private bool duck = false; //Duck
 
     // Update is called once per frame
-    void Update()
-    {
-        hMove = Input.GetAxisRaw("Horizontal") * rSpeed;
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-            animator.SetBool("Jumping", true);
-            audioSource.Play();
+    void Update() {
+        if (!playerLife.GetDead()) {
+            hMove = Input.GetAxisRaw("Horizontal") * rSpeed;
+            if (Input.GetButtonDown("Jump")) {
+                jump = true;
+                animator.SetBool("Jumping", true);
+                audioSource.Play();
+            }
+
+            animator.SetFloat("Speed", Mathf.Abs(hMove));
+
+            /*
+            if (Input.GetButtonDown("Duck"))
+            { duck = true; } //hMove = 0f; //The temporary character shouldn't move while ducking but the definitive may
+            else if (Input.GetButtonUp("Duck"))
+                duck = false;
+            */
         }
-
-        animator.SetFloat("Speed", Mathf.Abs(hMove));
-
-        if (Input.GetButtonDown("Duck"))
-        { duck = true; } //hMove = 0f; //The temporary character shouldn't move while ducking but the definitive may
-        else if (Input.GetButtonUp("Duck"))
-            duck = false;
     }
 
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         cc.Move(hMove * Time.fixedDeltaTime, duck, jump);
         jump = false;
     }
 
-    public void OnLanding()
-    {
+    public void OnLanding() {
         animator.SetBool("Jumping", false);
     }
 
-    public void OnDucking(bool isDucking)
-    {
+    public void OnDucking(bool isDucking) {
         animator.SetBool("Ducking", isDucking);
     }
 }

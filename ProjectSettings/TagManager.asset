@@ -11,6 +11,8 @@ TagManager:
   - MenuMusic
   - Enemy
   - PauseMenu
+  - Checkpoint
+  - Hazard
   layers:
   - Default
   - TransparentFX
