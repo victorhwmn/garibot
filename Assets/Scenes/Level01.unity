@@ -3455,7 +3455,38 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 907665583}
-    m_RemovedComponents: []
+    - target: {fileID: 70812474248903672, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61733918887984568, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 70812474248903672, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.011018813
+      objectReference: {fileID: 0}
+    - target: {fileID: 70812474248903672, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.2181188
+      objectReference: {fileID: 0}
+    - target: {fileID: 70812474248903672, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.5453775
+      objectReference: {fileID: 0}
+    - target: {fileID: 70812474248903672, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.15143406
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 61733918887984568, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
   m_IsPrefabAsset: 0
 --- !u!20 &519420031 stripped
@@ -3792,7 +3823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &998736991
 MonoBehaviour:
   m_ObjectHideFlags: 0

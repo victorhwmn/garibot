@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Player\CharacterController2D.cs" />
      <Compile Include="Assets\Scripts\Player\Collect.cs" />
+     <Compile Include="Assets\Scripts\Player\JumpHit.cs" />
      <Compile Include="Assets\Scripts\Player\MoveAlong.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerLifeController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />

@@ -24,7 +24,9 @@ public class PlayerLifeController : MonoBehaviour {
     // Collision with new checkpoint
     void OnTriggerEnter2D(Collider2D collider) {
         string tag = collider.tag;
-
+       
+        
+        
         if (tag == "Checkpoint") {
             Checkpoint checkpoint = collider.gameObject.GetComponent<Checkpoint>();
 
@@ -33,17 +35,33 @@ public class PlayerLifeController : MonoBehaviour {
                 checkpoint.Activate();
             }
         } else if (tag == "Enemy" || tag == "Hazard") {
-            RespawnPlayer();
-        }
+                RespawnPlayer();
+            }
+            
+        
     }
 
-    // Enemies and hazards
+    // Enemies and hazards and stomp
     void OnCollisionEnter2D(Collision2D collision) {
         Collider2D collider = collision.collider;
         string tag = collider.tag;
+        
 
         if (tag == "Enemy" || tag == "Hazard") {
-            RespawnPlayer();
+           
+            foreach(ContactPoint2D point in collision.contacts) {
+                Debug.DrawLine(point.point, point.point + point.normal, Color.red, 10);
+                Debug.Log(point.normal.x + "," + point.normal.y);
+                if (point.normal.y >= 0.9f) {
+                    collider.gameObject.GetComponent<EnemyAI>().Die();
+                }
+                else {
+
+
+                    RespawnPlayer();
+                }
+            }
+            
         }
     }
 
