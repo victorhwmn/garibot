@@ -107,6 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4186303862579466}
   - component: {fileID: 212011979367531806}
+  - component: {fileID: 61733918887984568}
   - component: {fileID: 70812474248903672}
   - component: {fileID: 50228143230681810}
   - component: {fileID: 95621997153211016}
@@ -547,7 +548,7 @@ Transform:
   m_GameObject: {fileID: 1795877860018202}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -74.01267, y: -4.7467947, z: 0}
-  m_LocalScale: {x: 4.001556, y: 3.7182937, z: 1}
+  m_LocalScale: {x: 1.36, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4051172674725168}
   m_RootOrder: 1
@@ -670,7 +671,7 @@ Transform:
   m_GameObject: {fileID: 1848925742536812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -74.00468, y: -4.7437944, z: 0}
-  m_LocalScale: {x: 4.0011735, y: 3.7476995, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4051172674725168}
   m_RootOrder: 2
@@ -741,7 +742,7 @@ Transform:
   m_GameObject: {fileID: 1689061495630654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -73.97267, y: -4.7467947, z: 0}
-  m_LocalScale: {x: 4.00112, y: 3.744656, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4051172674725168}
   m_RootOrder: 3
@@ -806,6 +807,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!61 &61733918887984568
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1127485645545734}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: ab4c81a0ccf7b844092bb9141072762f, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.002353847, y: 0.5366944}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 0.8, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2271446, y: 0.97945094}
+  m_EdgeRadius: 0
 --- !u!70 &70812474248903672
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -818,8 +844,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.08}
-  m_Size: {x: 1.25, y: 1.9}
+  m_Offset: {x: 0.0049218535, y: -0.12705791}
+  m_Size: {x: 1.2303127, y: 1.4966252}
   m_Direction: 0
 --- !u!81 &81264982594404486
 AudioListener:

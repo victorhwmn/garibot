@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class Progress : MonoBehaviour
 {
-    float total = 4f;
+    float total;
     Image progressBar;
 
     private Game_Manager gm;
     // Use this for initialization
     void Start ()
     {
+        total = GameObject.FindGameObjectsWithTag("Collectible").Length + GameObject.FindGameObjectsWithTag("Enemy").Length;
         progressBar = gameObject.GetComponent<Image>();
         progressBar.fillAmount = 0F;
 
