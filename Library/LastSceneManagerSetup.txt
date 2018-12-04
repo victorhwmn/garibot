@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/EndingScene.unity
+=======
+- path: Assets/Scenes/CreditsScene.unity
+>>>>>>> 2038b0a34900e1413461f2ce6e5895d78eb89a34
   isLoaded: 1
   isActive: 1
