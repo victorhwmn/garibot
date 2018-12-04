@@ -4,10 +4,12 @@ using UnityEngine.SceneManagement;
 public class LevelChanger : MonoBehaviour {
 
     public Animator animator;
+    public Game_Manager manager;
     private static int sceneToLoad;
 
-    // Load without fading
+    // Loads scene without fading
     public void LoadScene (int sceneIndex) {
+        UpdateProgressManager();
         SceneManager.LoadScene(sceneIndex);
     }
 
@@ -22,7 +24,16 @@ public class LevelChanger : MonoBehaviour {
         FadeToScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    // Saves progress and loads new scene
     public void OnFadeComplete() {
+        UpdateProgressManager();
         SceneManager.LoadScene(sceneToLoad);
+    }
+
+    // Sends completion from manager to progress manager
+    private void UpdateProgressManager() {
+        if (manager) {
+            StaticProgressManager.UpdateCompletion(manager.ReturnCompletion());
+        }
     }
 }

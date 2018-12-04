@@ -19,5 +19,11 @@ public class Game_Manager : MonoBehaviour
         retrieveAmount += temp;
         return temp;
     }
+
+    // Returns completion percentage from zero to 100
+    public float ReturnCompletion() {
+        return (((float) GetTotalAmount() / (float) 5) * 100); // temp
+        //return (((float) GetTotalAmount() / (float) GetTotalInWorldAmount()) * 100);
+    }
 }
 
