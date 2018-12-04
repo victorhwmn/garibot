@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: d41286544ddb8324fb76041aab05c4cd
   - enabled: 1
     path: Assets/Scenes/CreditsScene.unity
-    guid: 85a0cd0feb5035140860ca8d3fd26e1a
+    guid: 52efdc28223e0894fa073d755f264603
   - enabled: 1
     path: Assets/Scenes/Storyboard.unity
     guid: 0781ce8e278ed1141894ca35609a95f1
@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Level03.unity
     guid: 6f72f21ec60378c469ef0c4f9df22dbb
   - enabled: 1
-    path: Assets/Scenes/FinalScene.unity
-    guid: 52efdc28223e0894fa073d755f264603
+    path: Assets/Scenes/EndingScene.unity
+    guid: 85a0cd0feb5035140860ca8d3fd26e1a
   m_configObjects: {}

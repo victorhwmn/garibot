@@ -1534,9 +1534,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2580cc9dafb4c7741b7528fad44d653e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GarbageBackground: {fileID: 4565937757577700}
-  Manager: {fileID: 114649159068776528}
-  BackAnimator: {fileID: 95908242719175450}
+  garbageBackground: {fileID: 4565937757577700}
+  manager: {fileID: 114649159068776528}
+  backAnimator: {fileID: 95908242719175450}
 --- !u!114 &114833378407662040
 MonoBehaviour:
   m_ObjectHideFlags: 1
