@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 111
+  controlID: 40
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -122,7 +122,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 20}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
     y: 0
     width: 1680
     height: 967
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 112
+  controlID: 41
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 113
+  controlID: 42
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -1396
+  m_LastSelectedObjectID: -1482
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -451,20 +451,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Leonardo\Documents\jogo-ewaste
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 59}
-    m_SelectedIDs: 2a320000
-    m_LastClickedID: 12842
-    m_ExpandedIDs: 00000000ce2600003e2c0000462c00009a2c00009c2c0000d82c00002c2d0000d22e00001c2f0000d42f0000ea300000e6310000b6320000d43200002833000088330000983300009e330000aa3300000c34000050340000a4340000a83400000e3500000a360000123600002e360000563600005a3600008a360000223a0000243a0000263a0000283a000000ca9a3b
+    m_SelectedIDs: d82c0000
+    m_LastClickedID: 11480
+    m_ExpandedIDs: 00000000ce2600003e2c0000462c00009a2c00009c2c0000d82c00002c2d0000d22e00001c2f0000d42f0000ea300000e4310000b4320000d23200002633000086330000963300009c330000a83300000a3400004e340000a2340000a63400000c35000008360000103600002c360000543600005836000088360000203a0000223a0000243a0000263a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -492,7 +492,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ce2600003e2c0000462c00009a2c00009c2c0000d82c00002c2d0000d22e00001c2f0000d42f0000ea300000e6310000b6320000d43200002833000088330000983300009e330000aa3300000c34000050340000a4340000a83400000e3500000a360000123600002e360000563600005a3600008a360000223a0000243a0000263a0000283a0000
+    m_ExpandedIDs: 00000000ce2600003e2c0000462c00009a2c00009c2c0000d82c00002c2d0000d22e00001c2f0000d42f0000ea300000e4310000b4320000d23200002633000086330000963300009c330000a83300000a3400004e340000a2340000a63400000c35000008360000103600002c360000543600005836000088360000203a0000223a0000243a0000263a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -608,9 +608,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d22c0000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: f2f9ffff26faffff84faffff8afaffffaefafffff6faffff00000000
+    m_ExpandedIDs: 404cffff1c51ffffca55ffff26fafffff6faffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
