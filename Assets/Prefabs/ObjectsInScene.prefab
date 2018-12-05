@@ -1511,7 +1511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 155dbc69925055f4eb5346b004b21a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathYHeight: -30
+  deathYHeight: -50
   animator: {fileID: 95621997153211016}
 --- !u!114 &114750445190787220
 MonoBehaviour:

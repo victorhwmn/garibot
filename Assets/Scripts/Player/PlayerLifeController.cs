@@ -76,6 +76,7 @@ public class PlayerLifeController : MonoBehaviour {
     // Move player to spawn
     public void DiedAnimationEnded() {
         transform.position = lastCheckpoint;
+        gameObject.GetComponent<ManageFollowers>().RestartAllFollowers(); //Reseta as posições dos coletáveis seguidores
         dead = false;
         animator.SetBool("Died", false);
     }

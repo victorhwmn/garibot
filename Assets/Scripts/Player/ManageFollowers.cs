@@ -48,4 +48,10 @@ public class ManageFollowers : MonoBehaviour
         Destroy(followers[nFollowers]);
     }
 
+    public void RestartAllFollowers()
+    {
+        for (int i = 0; i < nFollowers; i++)
+            followers[i].transform.position = new Vector3(followerPoint.position.x, followerPoint.position.y, followerPoint.position.z);
+    }
+
 }
