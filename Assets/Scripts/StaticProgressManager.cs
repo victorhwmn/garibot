@@ -13,7 +13,7 @@ public static class StaticProgressManager {
     public static UnityEvent onUpdate = new UnityEvent();
 
 	public static float GetCompletion () {
-        return TotalCompletionPercentage;
+        return TotalCompletionPercentage * 100f;
 	}
 
     public static void SetCompletion (float NewValue) {
@@ -23,7 +23,7 @@ public static class StaticProgressManager {
     
     public static void UpdateCompletion (float IncrementValue) {
         TotalCompletionPercentage += (IncrementValue / LevelQuantity);
-        Debug.Log("Completion updated to " + TotalCompletionPercentage + "%");
+        Debug.Log("Completion updated to " + TotalCompletionPercentage * 100f + "%");
         onUpdate.Invoke();
     }
 }

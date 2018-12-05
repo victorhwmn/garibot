@@ -20,7 +20,10 @@ public class Progress : MonoBehaviour
         if (g == null)
             Debug.Log("Não há um objeto chamado Manager na cena!");
         else
+        {
             gm = g.GetComponent<Game_Manager>();
+            gm.SetTotalExisting(total);
+        }
     }
 	
 	// Update is called once per frame

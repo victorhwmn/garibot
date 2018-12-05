@@ -32,8 +32,8 @@ public class LevelChanger : MonoBehaviour {
 
     // Sends completion from manager to progress manager
     private void UpdateProgressManager() {
-        if (manager) {
-            StaticProgressManager.UpdateCompletion(manager.ReturnCompletion());
-        }
+        //if (manager) {
+        //    StaticProgressManager.UpdateCompletion(manager.ReturnCompletion());
+        //}
     }
 }

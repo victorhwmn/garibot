@@ -15,7 +15,7 @@ public class ChangeBackground : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        completionRate = manager.ReturnCompletion();
+        completionRate = manager.ReturnLevelCompletion();
         // Verifies completion rate
         if (completionRate == 100 && garbageLevel > 0) {
             garbageLevel = 0;

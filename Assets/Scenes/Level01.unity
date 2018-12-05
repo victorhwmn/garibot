@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 101329292}
   - component: {fileID: 101329291}
   - component: {fileID: 101329290}
+  - component: {fileID: 101329294}
   m_Layer: 10
   m_Name: RobotPart
   m_TagString: FinalCollectible
@@ -247,6 +248,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &101329294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 101329288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e753af6b3c62cf44867cbfccb6764b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 101329293}
+  c2d: {fileID: 101329292}
+  minPercentage: 50
 --- !u!4 &162468798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4062312673550522, guid: 4bc9bdd521a5ac242bdc54495b8f7e66,

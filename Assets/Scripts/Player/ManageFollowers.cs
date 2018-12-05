@@ -40,6 +40,9 @@ public class ManageFollowers : MonoBehaviour
 
     public void ClearAllFollowers()
     {
+        if (nFollowers == 0)
+            return;
+
         for (nFollowers--; nFollowers > 0; nFollowers--)
         {
             followers[nFollowers].GetComponent<SummonAnimation>().Summon();
@@ -50,6 +53,9 @@ public class ManageFollowers : MonoBehaviour
 
     public void RestartAllFollowers()
     {
+        //if (nFollowers == 0)
+        //    return;
+
         for (int i = 0; i < nFollowers; i++)
             followers[i].transform.position = new Vector3(followerPoint.position.x, followerPoint.position.y, followerPoint.position.z);
     }
