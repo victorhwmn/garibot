@@ -15,10 +15,14 @@ public class EnemyAI : MonoBehaviour
     public Move hop;
     public Move jump;
     public Move fly;
+    public Move shoot;
     public GameObject collectible;
+    public Transform firePoint;
+    public GameObject bullet;
 
     private Transform grid;
     private Vector2 cFly;
+    //private bool facingRight = true;
     // Use this for initialization
     void Start()
     {
@@ -27,12 +31,15 @@ public class EnemyAI : MonoBehaviour
         if (jump.check)
             InvokeRepeating("Jump", (1 / jump.rate), (1 / jump.rate));
         if (fly.check)
+            InvokeRepeating("Fly", 1f, (1 / fly.rate));
+        if (shoot.check)
         {
-            InvokeRepeating("Fly", 1f, (2 / fly.rate));
-            //InvokeRepeating("CounterFly", 1f + (1 / fly.rate), (2 / fly.rate));
+            InvokeRepeating("Shoot", (1 / shoot.rate), (1 / shoot.rate));
+            if (firePoint == null) Debug.LogWarning("Um inimigo está sem FirePoint (Transform)!");
+            if (bullet == null) Debug.LogWarning("Um inimigo está sem Bullet (Prefab)!");
         }
 
-        GameObject g = GameObject.Find("Grid");
+            GameObject g = GameObject.Find("Grid");
         if (g == null)
             Debug.Log("Não há um objeto chamado Grid na cena!");
         else
@@ -49,9 +56,22 @@ public class EnemyAI : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().velocity = v;
     }
 
+    private void FixFacing(float f)
+    {
+        if (f >= 0)
+            gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+        else
+            gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+
+        //if (facingRight)
+        //    gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+        //else
+        //    gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+    }
+
     private void Hop()
     {
-        Vector2 d = new Vector2(Random.Range(-1f, 1f), 1f); d = d.normalized;
+        Vector2 d = new Vector2(Random.Range(-1f, 1f), 1f); d = d.normalized; FixFacing(d.x);
         gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(hop.force * d.x, hop.force * d.y), ForceMode2D.Impulse);
     }
 
@@ -64,8 +84,16 @@ public class EnemyAI : MonoBehaviour
     private void Fly()
     {
         Vector2 d = new Vector2(4f * Random.Range(-0.5f, 0.5f), Random.Range(-0.2f, 0.2f));
-        d = d.normalized; //cFly = new Vector2(-d.x, -d.y);
+        d = d.normalized; FixFacing(d.x);
         gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(fly.force * d.x, fly.force * d.y), ForceMode2D.Impulse);
+    }
+
+    private void Shoot()
+    {
+        //Vector2 d = new Vector2(4f * Random.Range(-0.5f, 0.5f), Random.Range(-0.2f, 0.2f));
+        //d = d.normalized;
+        GameObject b = Instantiate(bullet, firePoint.transform.position, firePoint.transform.rotation);
+        b.GetComponent<BulletMovement>().speed = shoot.force;
     }
 
     private void CounterFly()

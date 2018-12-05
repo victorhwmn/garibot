@@ -11,11 +11,13 @@ public class Collect : MonoBehaviour
 {
     //public string colliderTag;
     private Game_Manager gm;
+    private ManageFollowers mf;
 //    private Placeholder flag;
 
     void Start()
     {
         gm = GameObject.Find("Manager").GetComponent<Game_Manager>();
+        mf = gameObject.GetComponent<ManageFollowers>();
     }
 
     //void Update()
@@ -39,11 +41,13 @@ public class Collect : MonoBehaviour
                 gm.IncrementTotal();
                 Destroy(collider.gameObject);
             }
+            mf.CreateNewFollower();
         }
         if (tag == "Recycler")
         {
             collider.gameObject.GetComponent<SummonAnimation>().Summon();
             gm.RetrieveAllPieces();
+            mf.ClearAllFollowers();
         }
     }
 }

@@ -13,6 +13,7 @@ TagManager:
   - PauseMenu
   - Checkpoint
   - Hazard
+  - Invisible Wall
   layers:
   - Default
   - TransparentFX
@@ -27,9 +28,9 @@ TagManager:
   - Collectibles
   - Bullets
   - Enemy
-  - 
-  - 
-  - 
+  - InvisibleWalls
+  - EnemyBullets
+  - Followers
   - 
   - 
   - 

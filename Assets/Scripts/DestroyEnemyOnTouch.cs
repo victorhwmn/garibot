@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrenadeMovement : MonoBehaviour
+public class DestroyEnemyOnTouch : MonoBehaviour
 {
     //public float launchForce = 10f;
     //// Use this for initialization

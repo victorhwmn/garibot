@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 114378479768591918}
   - component: {fileID: 114643298060881782}
   - component: {fileID: 114711361998432290}
+  - component: {fileID: 114337401085709758}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -296,6 +297,21 @@ GameObject:
   - component: {fileID: 4198405905828580}
   m_Layer: 9
   m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1513058533722586
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4636825179831030}
+  m_Layer: 9
+  m_Name: FollowerPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -582,6 +598,7 @@ Transform:
   m_Children:
   - {fileID: 4628766792110082}
   - {fileID: 4292245796461444}
+  - {fileID: 4636825179831030}
   - {fileID: 4464170542755104}
   m_Father: {fileID: 4934424911362436}
   m_RootOrder: 0
@@ -693,7 +710,7 @@ Transform:
   - {fileID: 4342946173972544}
   - {fileID: 4477142820826836}
   m_Father: {fileID: 4186303862579466}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4477142820826836
 Transform:
@@ -763,6 +780,19 @@ Transform:
   - {fileID: 4198405905828580}
   m_Father: {fileID: 4727231539828576}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4636825179831030
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1513058533722586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.067, y: -0.718, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4186303862579466}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4724972732758234
 Transform:
@@ -1135,6 +1165,20 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114337401085709758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1127485645545734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074c336f779a222448180a301a2bffe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followerPrefab: {fileID: 1118689060016254, guid: 487a6e5a5632f3a4584b75ec4e10f4f3,
+    type: 2}
+  followerPoint: {fileID: 4636825179831030}
 --- !u!114 &114342447363215664
 MonoBehaviour:
   m_ObjectHideFlags: 1

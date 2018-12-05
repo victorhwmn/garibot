@@ -15,8 +15,8 @@ public class Game_Manager : MonoBehaviour
     public int RetrieveAllPieces()  //Called when all collected pieces are retrieved/recycled
     { 
         int temp = totalAmount;
-        totalAmount = 0;
-        retrieveAmount += temp;
+        //totalAmount = 0;
+        retrieveAmount = temp;
         return temp;
     }
 

@@ -15,6 +15,7 @@ public class SummonAnimation : MonoBehaviour
     }
 
 	public void Summon () { Instantiate(animationObject, transform.position, Quaternion.identity); }
+    public void SummonAndDestroy() { Instantiate(animationObject, transform.position, Quaternion.identity); Destroy(gameObject); }
 
     public bool LockAndCheck()
     {

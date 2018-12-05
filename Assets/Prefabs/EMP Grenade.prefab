@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 50830897677528076}
   - component: {fileID: 114589208232598862}
   - component: {fileID: 114354089636354278}
+  - component: {fileID: 114971123993383882}
+  - component: {fileID: 114532774731096582}
   m_Layer: 11
   m_Name: EMP Grenade
   m_TagString: Untagged
@@ -113,6 +115,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 5
+--- !u!114 &114532774731096582
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095779020797048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c859c0b658b33c45a6791863b15feae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationObject: {fileID: 1634370005043712, guid: a2039cd5798e1ae488a4f98fff0d188e,
+    type: 2}
 --- !u!114 &114589208232598862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,6 +137,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46b664a2ae633be47a1b440c615d8347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114971123993383882
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095779020797048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b0282c549ea7848b04ebb8a77d524b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212811474549259008
