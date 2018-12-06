@@ -1468,6 +1468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalAmount: 0
   retrieveAmount: 0
+  totalExisting: 0
 --- !u!114 &114684810027383362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2084,7 +2085,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_TargetDisplay: 0
 --- !u!223 &223390467493491048
 Canvas:

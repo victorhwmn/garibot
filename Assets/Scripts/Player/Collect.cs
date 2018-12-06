@@ -43,7 +43,7 @@ public class Collect : MonoBehaviour
             }
             mf.CreateNewFollower();
         }
-        if (tag == "Recycler")
+        if (tag == "Recycler" && gameObject.GetComponent<ManageFollowers>().GetNFollowers() > 0) //Verifica se to segurando pelo menos um coletável pra ser entregue
         {
             collider.gameObject.GetComponent<SummonAnimation>().Summon();
             gm.RetrieveAllPieces();

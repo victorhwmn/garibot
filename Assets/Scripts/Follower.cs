@@ -10,13 +10,13 @@ public class Follower : MonoBehaviour
     //[HideInInspector]
     //public GameObject follower;
 
-    void Update ()
+    void FixedUpdate ()
     {
         if (Vector3.Distance(transform.position, leader.position) > distance)
         {
-            transform.position = new Vector3(   Mathf.Lerp(transform.position.x, leader.position.x, 5f * Time.deltaTime),
-                                                Mathf.Lerp(transform.position.y, leader.position.y, 5f * Time.deltaTime),
-                                                Mathf.Lerp(transform.position.z, leader.position.z, 5f * Time.deltaTime));
+            transform.position = new Vector3(   Mathf.Lerp(transform.position.x, leader.position.x, 8f * Time.deltaTime),
+                                                Mathf.Lerp(transform.position.y, leader.position.y, 8f * Time.deltaTime),
+                                                Mathf.Lerp(transform.position.z, leader.position.z, 8f * Time.deltaTime));
         }
     }
 }

@@ -12,6 +12,8 @@ public class ManageFollowers : MonoBehaviour
 
 	void Start () { followers = new GameObject[20]; }
 
+    public int GetNFollowers() { return nFollowers; }
+
     public void CreateNewFollower()
     {
         if (nFollowers == 0)
@@ -20,7 +22,7 @@ public class ManageFollowers : MonoBehaviour
             followers[0] = go;
             go.GetComponent<Follower>().leader = followerPoint;
 
-            float scale = Random.Range(.4f, .8f);
+            float scale = Random.Range(.3f, 1f);
             go.transform.localScale = new Vector3(scale, scale, 1f);
 
             nFollowers++;
@@ -30,7 +32,7 @@ public class ManageFollowers : MonoBehaviour
             GameObject go = Instantiate(followerPrefab, followers[nFollowers-1].transform.position, Quaternion.identity);
             followers[nFollowers] = go;
 
-            float scale = Random.Range(.4f, .8f);
+            float scale = Random.Range(.3f, 1f);
             go.transform.localScale = new Vector3(scale, scale, 1f);
 
             go.GetComponent<Follower>().leader = followers[nFollowers-1].transform;
