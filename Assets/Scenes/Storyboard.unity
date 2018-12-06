@@ -225,9 +225,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pannels:
-  - {fileID: 21300000, guid: af579b7e1aaaa5b40a780e247d7221fc, type: 3}
-  - {fileID: 21300000, guid: dd5d52763d737de4986b459ec5e0c6dc, type: 3}
-  - {fileID: 21300000, guid: 5e3092a110c82fe429791171793e94b7, type: 3}
+  - {fileID: 21300000, guid: 3dcfb735894864146b1df482288cf94d, type: 3}
+  - {fileID: 21300000, guid: 84252d1cf50b3a14f9a354c316072845, type: 3}
+  - {fileID: 21300000, guid: 93a8d1923052e68468b4f3831415a8f0, type: 3}
+  - {fileID: 21300000, guid: 59ddc4c6a8019e0479be62b0e850a6d4, type: 3}
+  - {fileID: 21300000, guid: 594e8daacd796884dbceec14eadcc2f1, type: 3}
+  - {fileID: 21300000, guid: d426a032ef565b94baeef1f000ea5204, type: 3}
   imageFrame: {fileID: 1294937948}
   finalText: {fileID: 21300000, guid: 0a9347dcbe5e2064e9a6a28ceab01c93, type: 3}
   textFrame: {fileID: 1400794417}
@@ -520,7 +523,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: af579b7e1aaaa5b40a780e247d7221fc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3dcfb735894864146b1df482288cf94d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
