@@ -16,9 +16,11 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if (!playerLife.GetDead()) {
+        if (!playerLife.GetDead())
+        {
             hMove = Input.GetAxisRaw("Horizontal") * rSpeed;
-            if (Input.GetButtonDown("Jump")) {
+            if (Input.GetButtonDown("Jump"))
+            {
                 jump = true;
                 animator.SetBool("Jumping", true);
                 audioSource.Play();
@@ -33,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
                 duck = false;
             */
         }
+        else
+            hMove = 0f;
     }
 
     void FixedUpdate() {
