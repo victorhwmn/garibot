@@ -968,8 +968,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011018813, y: -0.12895846}
-  m_Size: {x: 1.2181188, y: 1.5004263}
+  m_Offset: {x: 0.011018813, y: -0.15143406}
+  m_Size: {x: 1.2181188, y: 1.5453775}
   m_Direction: 0
 --- !u!81 &81154199372732672
 AudioListener:
@@ -1525,7 +1525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58eff16ca74880418e24f1213d1847d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.5
+  offset: 1
 --- !u!114 &114778691658440164
 MonoBehaviour:
   m_ObjectHideFlags: 1
