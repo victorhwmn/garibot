@@ -25,7 +25,7 @@ public class Game_Manager : MonoBehaviour
 
     // Returns completion percentage from zero to 100
     public float ReturnLevelCompletion() {
-        return (retrieveAmount / totalExisting) * 100f; // temp
+        return (totalAmount / totalExisting) * 100f; // temp
         //return (((float) GetTotalAmount() / (float) GetTotalInWorldAmount()) * 100);
     }
 }
