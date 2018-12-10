@@ -48,6 +48,6 @@ public class EndingStory : MonoBehaviour {
     }
 
     public void OnClick() {
-        levelChanger.FadeToScene(0);
+        levelChanger.FadeToScene(2);
     }
 }
