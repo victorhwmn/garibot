@@ -25,6 +25,7 @@ public class FinalCollectible : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        Debug.Log("AAAA" + gm.ReturnLevelCompletion());
 		if (gm.ReturnLevelCompletion() > minPercentage)
         {
             sr.enabled = true;
