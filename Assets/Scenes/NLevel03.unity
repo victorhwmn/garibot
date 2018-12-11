@@ -15121,6 +15121,15 @@ Prefab:
       value: 
       objectReference: {fileID: 24300002, guid: 5427684ee2784fd40a3b49adcdbf0b5a,
         type: 2}
+    - target: {fileID: 1202386521608756, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
+      propertyPath: m_TagString
+      value: Music/BackgroundMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 82521886313406878, guid: a7873510d295cd944ae9d5224c7baeda,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: eb1e689aa7ec23e479749ba21be06138, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
   m_IsPrefabAsset: 0

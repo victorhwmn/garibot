@@ -1704,7 +1704,7 @@ GameObject:
   - component: {fileID: 1416093482}
   m_Layer: 0
   m_Name: Music
-  m_TagString: MenuMusic
+  m_TagString: Music/MenuMusic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1720,8 +1720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d6d9140151b5f4f87182650c614767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToBeDestroyed: Level01
-  tagName: MenuMusic
+  tagGroupName: Music
 --- !u!82 &1416093483
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1732,7 +1731,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 5427684ee2784fd40a3b49adcdbf0b5a,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: f8419a78c67741d4a9f6c733c894e15b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f6226b892cf66914d8bf7279d1224c1a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.7
   m_Pitch: 1

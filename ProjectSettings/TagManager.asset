@@ -7,13 +7,15 @@ TagManager:
   - Collectible
   - Recycler
   - FinalCollectible
-  - BackgroundMusic
-  - MenuMusic
   - Enemy
   - PauseMenu
   - Checkpoint
   - Hazard
   - Invisible Wall
+  - Music/BackgroundMusic
+  - Music/MenuMusic
+  - Music/StoryMusic
+  - Music/CreditsMusic
   layers:
   - Default
   - TransparentFX

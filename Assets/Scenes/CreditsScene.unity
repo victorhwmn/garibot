@@ -209,6 +209,67 @@ RectTransform:
   m_AnchoredPosition: {x: 300, y: 224.8394}
   m_SizeDelta: {x: 467, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &278632063
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4426253164641282, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426253164641282, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426253164641282, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426253164641282, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426253164641282, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426253164641282, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426253164641282, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426253164641282, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202386521608756, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
+      propertyPath: m_TagString
+      value: Music/CreditsMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 82521886313406878, guid: a7873510d295cd944ae9d5224c7baeda,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 37741212ba4aafa45a484bb0b2240e56, type: 3}
+    - target: {fileID: 114081308670216660, guid: a7873510d295cd944ae9d5224c7baeda,
+        type: 2}
+      propertyPath: tagName
+      value: Music/MenuMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 114081308670216660, guid: a7873510d295cd944ae9d5224c7baeda,
+        type: 2}
+      propertyPath: tagGroupName
+      value: Music
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &388868724
 GameObject:
   m_ObjectHideFlags: 0
