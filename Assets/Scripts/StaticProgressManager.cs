@@ -13,6 +13,7 @@ public static class StaticProgressManager {
     public static UnityEvent onUpdate = new UnityEvent();
 
 	public static float GetCompletion () {
+		if (TotalCompletionPercentage > 1f) TotalCompletionPercentage = 1f;
         return TotalCompletionPercentage * 100f;
 	}
 
