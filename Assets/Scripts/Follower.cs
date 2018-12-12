@@ -14,9 +14,25 @@ public class Follower : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, leader.position) > distance)
         {
-            transform.position = new Vector3(   Mathf.Lerp(transform.position.x, leader.position.x, 8f * Time.deltaTime),
+            transform.position = new Vector3(Mathf.Lerp(transform.position.x, leader.position.x, 8f * Time.deltaTime),
                                                 Mathf.Lerp(transform.position.y, leader.position.y, 8f * Time.deltaTime),
                                                 Mathf.Lerp(transform.position.z, leader.position.z, 8f * Time.deltaTime));
         }
+        else
+        {
+            if (leader.tag == "Recycler")
+                AnimateAndDie();
+        }
+    }
+
+    public void DestroyFollower()
+    {
+        leader = GameObject.FindGameObjectWithTag("Recycler").transform;
+    }
+
+    private void AnimateAndDie()
+    {
+        gameObject.GetComponent<SummonAnimation>().Summon();
+        Destroy(gameObject);
     }
 }

@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c859c0b658b33c45a6791863b15feae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationObject: {fileID: 1982827077509860, guid: 91dd2402c9f8f6a4da77b223c51669ae,
+  animationObject: {fileID: 1387046409009264, guid: 2597fb0584235b3459ea0809ebe1a875,
     type: 2}
 --- !u!114 &114770607253948474
 MonoBehaviour:

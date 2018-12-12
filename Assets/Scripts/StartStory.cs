@@ -9,6 +9,8 @@ public class StartStory : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        return;
+
         int garbageLevel = 3;
         float completion = StaticProgressManager.GetCompletion();
 
@@ -28,7 +30,7 @@ public class StartStory : MonoBehaviour {
         {
             garbageLevel = 2;
             // That's impossible, since the player needs at least 50% to end the game
-            Debug.LogError("Something's wrong! Check EndingStory script");
+            Debug.LogError("Something's wrong! Check StartStory script");
         }
 
         foreach (GameObject fundo in fundosLixo)

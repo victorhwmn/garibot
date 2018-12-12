@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Game_Manager : MonoBehaviour
 {
-    [SerializeField] private int totalAmount = 0;
-    [SerializeField] private int retrieveAmount = 0; //Total amount of collected pieces
+    [SerializeField] private int totalAmount = 0; //Total amount of collected pieces
+    [SerializeField] private int retrieveAmount = 0;
     [SerializeField] private float totalExisting = 0; //Total amount of collectable pieces
     
 

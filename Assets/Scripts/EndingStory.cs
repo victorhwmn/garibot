@@ -10,7 +10,9 @@ public class EndingStory : MonoBehaviour {
     public Sprite[] sprites;
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
+        //Debug.Log("OH " + gameObject.name);
         int garbageLevel = 3;
         float completion = StaticProgressManager.GetCompletion();
 

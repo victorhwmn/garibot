@@ -38,14 +38,15 @@ public class Collect : MonoBehaviour
             if (sa.LockAndCheck())
             {
                 collider.gameObject.GetComponent<SummonAnimation>().Summon();
+                mf.CreateNewFollower(collider.gameObject.GetComponent<SpriteRenderer>().sprite);
                 gm.IncrementTotal();
                 Destroy(collider.gameObject);
             }
-            mf.CreateNewFollower();
         }
         if (tag == "Recycler" && gameObject.GetComponent<ManageFollowers>().GetNFollowers() > 0) //Verifica se to segurando pelo menos um coletável pra ser entregue
         {
-            collider.gameObject.GetComponent<SummonAnimation>().Summon();
+            collider.gameObject.GetComponent<Animator>().SetTrigger("Burn");
+            //collider.gameObject.GetComponent<SummonAnimation>().Summon();
             gm.RetrieveAllPieces();
             mf.ClearAllFollowers();
         }
