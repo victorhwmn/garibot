@@ -22,6 +22,7 @@ public class Progress : MonoBehaviour
         else
         {
             gm = g.GetComponent<Game_Manager>();
+            Debug.Log("There are " + total + " collectables in total");
             gm.SetTotalExisting(total);
         }
     }

@@ -27,14 +27,14 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         if (hop.check)
-            InvokeRepeating("Hop", 1f, (1 / hop.rate));
+            InvokeRepeating("Hop", 1f, Random.Range((1 / hop.rate)*0.7f, (1 / hop.rate) * 1.3f));
         if (jump.check)
-            InvokeRepeating("Jump", (1 / jump.rate), (1 / jump.rate));
+            InvokeRepeating("Jump", (1 / jump.rate), Random.Range((1 / jump.rate) * 0.7f, (1 / jump.rate) * 1.3f));
         if (fly.check)
-            InvokeRepeating("Fly", 1f, (1 / fly.rate));
+            InvokeRepeating("Fly", 1f, Random.Range((1 / fly.rate) * 0.7f, (1 / fly.rate) * 1.3f));
         if (shoot.check)
         {
-            InvokeRepeating("Shoot", (1 / shoot.rate), (1 / shoot.rate));
+            InvokeRepeating("Shoot", (1 / shoot.rate), Random.Range((1 / shoot.rate) * 0.7f, (1 / shoot.rate) * 1.3f));
             if (firePoint == null) Debug.LogWarning("Um inimigo está sem FirePoint (Transform)!");
             if (bullet == null) Debug.LogWarning("Um inimigo está sem Bullet (Prefab)!");
         }
