@@ -16,7 +16,8 @@ public class EndingStory : MonoBehaviour {
         //Debug.Log("OH " + gameObject.name);
         int garbageLevel = 3;
         float completion = StaticProgressManager.GetCompletion();
-
+		completion = Mathf.Floor(completion);
+		
         if (completion >= 100) {
             garbageLevel = 0;
             NewSprite(2);
