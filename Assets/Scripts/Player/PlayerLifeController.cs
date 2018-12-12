@@ -4,7 +4,8 @@ public class PlayerLifeController : MonoBehaviour {
 
     public float deathYHeight = -30f;
     public Animator animator;
-    
+    public AudioSource audioSource;
+
     private Vector2 lastCheckpoint;
     private bool dead;
 
@@ -70,6 +71,7 @@ public class PlayerLifeController : MonoBehaviour {
         if (!dead) {
             dead = true;
             //gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
+            audioSource.Play();
             animator.SetBool("Died", true);
         }
     }

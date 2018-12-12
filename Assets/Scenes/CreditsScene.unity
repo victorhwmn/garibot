@@ -267,6 +267,12 @@ Prefab:
       propertyPath: tagGroupName
       value: Music
       objectReference: {fileID: 0}
+    - target: {fileID: 82521886313406878, guid: a7873510d295cd944ae9d5224c7baeda,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243796319481685446, guid: 5427684ee2784fd40a3b49adcdbf0b5a,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7873510d295cd944ae9d5224c7baeda, type: 2}
   m_IsPrefabAsset: 0
