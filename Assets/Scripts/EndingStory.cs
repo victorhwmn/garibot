@@ -3,10 +3,11 @@ using UnityEngine;
 using TMPro;
 
 public class EndingStory : MonoBehaviour {
-    public GameObject[] fundosLixo;
+    public GameObject[] fundosLixo, frames;
+    public Animator fade;
     public TextMeshProUGUI text;
     public LevelChanger levelChanger;
-    public SpriteRenderer spriteRenderer;
+    public SpriteRenderer[] dogSpriteRenderer;
     public Sprite[] sprites;
 
     // Use this for initialization
@@ -46,7 +47,18 @@ public class EndingStory : MonoBehaviour {
     }
 
     public void NewSprite(int spriteId) {
-        spriteRenderer.sprite = sprites[spriteId];
+        foreach (SpriteRenderer dog in dogSpriteRenderer) {
+            dog.sprite = sprites[spriteId];
+        }
+    }
+
+    public void OnAnimationEnd() {
+        fade.SetTrigger("FadeOut");
+    }
+
+    public void OnFadeEnd() {
+        frames[0].SetActive(false);
+        frames[1].SetActive(true);
     }
 
     public void OnClick() {
