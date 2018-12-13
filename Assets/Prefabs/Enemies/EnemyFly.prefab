@@ -345,7 +345,7 @@ MonoBehaviour:
     force: 0
     rate: 0
     check: 0
-  collectible: {fileID: 1728901104305700, guid: 4732c538782237149a2c8f34f05d478c,
+  collectible: {fileID: 1070228959382824, guid: 596fd6c3b7c66f7428d664b77584f72b,
     type: 2}
   firePoint: {fileID: 0}
   bullet: {fileID: 0}
