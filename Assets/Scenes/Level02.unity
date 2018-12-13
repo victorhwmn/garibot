@@ -16892,6 +16892,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41312ffb1de26f242bb97327bf8359ce, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1613831450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114964704126617628, guid: 41312ffb1de26f242bb97327bf8359ce,
+    type: 2}
+  m_PrefabInternal: {fileID: 1613831449}
+  m_Script: {fileID: 11500000, guid: b06b44879bb4dc5499a4cd12aab02e15, type: 3}
 --- !u!1 &1621840316
 GameObject:
   m_ObjectHideFlags: 0
@@ -18351,6 +18357,16 @@ Prefab:
     - target: {fileID: 4934424911362436, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833378407662040, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1613831450}
+    - target: {fileID: 114833378407662040, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FadeToScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}

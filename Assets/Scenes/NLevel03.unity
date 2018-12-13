@@ -15688,6 +15688,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114833378407662040, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1545655892}
+    - target: {fileID: 114833378407662040, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FadeToScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
   m_IsPrefabAsset: 0
@@ -17267,6 +17277,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41312ffb1de26f242bb97327bf8359ce, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1545655892 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114964704126617628, guid: 41312ffb1de26f242bb97327bf8359ce,
+    type: 2}
+  m_PrefabInternal: {fileID: 1545655891}
+  m_Script: {fileID: 11500000, guid: b06b44879bb4dc5499a4cd12aab02e15, type: 3}
 --- !u!1001 &1564679488
 Prefab:
   m_ObjectHideFlags: 0

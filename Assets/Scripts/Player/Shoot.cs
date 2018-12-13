@@ -11,6 +11,10 @@ public class Shoot : MonoBehaviour
 
     public void SpawnBullet(Vector3 position, Vector3 rotation)
     {
+        if (PauseMenu.GameIsPaused == true)
+        {
+            return;
+        }
         audioSource.Play();
         bullet = Instantiate(bulletPrefab, position, Quaternion.Euler(rotation));
         bullet.GetComponent<Rigidbody2D>().AddForce(
