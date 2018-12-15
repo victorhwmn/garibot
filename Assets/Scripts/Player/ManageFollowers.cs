@@ -10,6 +10,8 @@ public class ManageFollowers : MonoBehaviour
     private GameObject[] followers;
     private int nFollowers = 0;
 
+    private bool go = false;
+
 	void Start () { followers = new GameObject[40]; }
 
     public int GetNFollowers() { return nFollowers; }
@@ -74,12 +76,40 @@ public class ManageFollowers : MonoBehaviour
 
     public void ClearAllFollowers()
     {
-        if (nFollowers == 0)
-            return;
+        Game_Manager gm = GameObject.Find("Manager").GetComponent<Game_Manager>();
+        //Debug.Log(nFollowers + " + " + gm.GetRetrieveAmount() + " = " + gm.GetTotalExisting());
+        go = false;
+        if (nFollowers + gm.GetRetrieveAmount() >= gm.GetTotalExisting())
+            go = true;
 
-        for (nFollowers--; nFollowers > 0; nFollowers--)
-            followers[nFollowers].GetComponent<Follower>().DestroyFollower();
-        followers[nFollowers].GetComponent<Follower>().DestroyFollower();
+        StartCoroutine(StartClearAllFollowers());
+    }
+    public IEnumerator StartClearAllFollowers()
+    {
+        if (nFollowers == 0)
+            yield return new WaitForSeconds(0f);
+        else
+        {
+            for (int i = 0; i < nFollowers-1; i++)
+            {
+                followers[i+1].GetComponent<Follower>().leader = followerPoint;
+                followers[i].GetComponent<Follower>().DestroyWithoutAnimate();
+                yield return new WaitForSeconds(.1f);
+            }
+
+            if (go)
+            {
+                //Debug.Log("No animation");
+                followers[nFollowers-1].GetComponent<Follower>().DestroyAndAnimate();
+            }
+            else
+            {
+                //Debug.Log("With animation");
+                followers[nFollowers-1].GetComponent<Follower>().DestroyWithoutAnimate();
+            }
+
+            nFollowers = 0;
+        }
     }
 
     public void RestartAllFollowers()

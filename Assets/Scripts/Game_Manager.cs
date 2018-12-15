@@ -12,6 +12,7 @@ public class Game_Manager : MonoBehaviour
     public void InitTotalAmount() { totalAmount = 0; }
     public void IncrementTotal() { totalAmount++; }
     public int GetTotalAmount() { return totalAmount; }
+    public int GetTotalExisting() { return (int)totalExisting; }
     public int GetRetrieveAmount() { return retrieveAmount; }
     public void SetTotalExisting(float t) { totalExisting = t; }
 

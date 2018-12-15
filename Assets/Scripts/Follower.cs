@@ -25,9 +25,15 @@ public class Follower : MonoBehaviour
         }
     }
 
-    public void DestroyFollower()
+    public void DestroyAndAnimate()
     {
         leader = GameObject.FindGameObjectWithTag("Recycler").transform;
+    }
+
+    public void DestroyWithoutAnimate()
+    {
+        leader = GameObject.FindGameObjectWithTag("Recycler").transform;
+        gameObject.GetComponent<SummonAnimation>().animationObject = null;
     }
 
     private void AnimateAndDie()

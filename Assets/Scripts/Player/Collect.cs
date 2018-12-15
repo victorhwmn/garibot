@@ -47,8 +47,8 @@ public class Collect : MonoBehaviour
         {
             collider.gameObject.GetComponent<Animator>().SetTrigger("Burn");
             //collider.gameObject.GetComponent<SummonAnimation>().Summon();
-            gm.RetrieveAllPieces();
             mf.ClearAllFollowers();
+            gm.RetrieveAllPieces();
         }
     }
 }

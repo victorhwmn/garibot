@@ -7,6 +7,7 @@ public class RepeatBackground : MonoBehaviour
     private Transform player;
     private Vector3 offset;
     private float distPlayer;
+    private float copiesDistance = 19f;
 
     [SerializeField]
     private GameObject previousCopy = null;
@@ -17,7 +18,7 @@ public class RepeatBackground : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        offset = new Vector3(13.5f, 0f, 0f);
+        offset = new Vector3(copiesDistance, 0f, 0f);
         distPlayer = 0f;
 
         SetUp();
@@ -59,13 +60,13 @@ public class RepeatBackground : MonoBehaviour
 
     private void Correct()
     {
-        if ((player.position.x - transform.position.x) > 13.5f)
+        if ((player.position.x - transform.position.x) > copiesDistance)
         {
-            distPlayer = 13.5f + distPlayer;
+            distPlayer = copiesDistance + distPlayer;
         }
         if ((player.position.x - transform.position.x) < 0f)
         {
-            distPlayer = distPlayer - 13.5f;
+            distPlayer = distPlayer - copiesDistance;
         }
         //Se a copia anterior for a mais próxima do player
         //if (Vector2.Distance(previousCopy.transform.position, player.position) < Vector2.Distance(followingCopy.transform.position, player.position))

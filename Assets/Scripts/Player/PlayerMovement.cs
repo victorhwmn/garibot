@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     void Update() {
         if (!playerLife.GetDead())
         {
+            ClearMovement();
             hMove = Input.GetAxisRaw("Horizontal") * rSpeed;
             if (Input.GetButtonDown("Jump"))
             {
@@ -36,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
             */
         }
         else
-            hMove = 0f;
+            ClearMovement();
     }
 
     void FixedUpdate() {
@@ -50,5 +51,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnDucking(bool isDucking) {
         animator.SetBool("Ducking", isDucking);
+    }
+
+    public void ClearMovement()
+    {
+        hMove = 0f;
     }
 }
