@@ -345,8 +345,8 @@ MonoBehaviour:
 
     USANDO'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 42c5919084ae6ad438d944066edf0e35, type: 2}
-  m_sharedMaterial: {fileID: 21698238849124464, guid: 42c5919084ae6ad438d944066edf0e35,
+  m_fontAsset: {fileID: 11400000, guid: ffc75c53d44cf0743afe85b0f8e841b3, type: 2}
+  m_sharedMaterial: {fileID: 21403489162502560, guid: ffc75c53d44cf0743afe85b0f8e841b3,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -377,7 +377,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 17
   m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
@@ -478,8 +478,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -203.42, y: -176.72}
-  m_SizeDelta: {x: -55, y: -132.20001}
+  m_AnchoredPosition: {x: -204.498, y: -177.417}
+  m_SizeDelta: {x: -120.05, y: -174.232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &177645694
 Animator:
@@ -518,10 +518,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: checkpoint
+  m_text: Checkpoint
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 42c5919084ae6ad438d944066edf0e35, type: 2}
-  m_sharedMaterial: {fileID: 21698238849124464, guid: 42c5919084ae6ad438d944066edf0e35,
+  m_fontAsset: {fileID: 11400000, guid: ffc75c53d44cf0743afe85b0f8e841b3, type: 2}
+  m_sharedMaterial: {fileID: 21403489162502560, guid: ffc75c53d44cf0743afe85b0f8e841b3,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -552,7 +552,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 17
   m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
@@ -7589,10 +7589,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: a barra acima mostra quanto foi coletado do total da fase
+  m_text: A barra acima mostra quanto foi coletado do total da fase
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 42c5919084ae6ad438d944066edf0e35, type: 2}
-  m_sharedMaterial: {fileID: 21698238849124464, guid: 42c5919084ae6ad438d944066edf0e35,
+  m_fontAsset: {fileID: 11400000, guid: ffc75c53d44cf0743afe85b0f8e841b3, type: 2}
+  m_sharedMaterial: {fileID: 21403489162502560, guid: ffc75c53d44cf0743afe85b0f8e841b3,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7623,7 +7623,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 17
   m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
@@ -7768,8 +7768,8 @@ MonoBehaviour:
 
     USANDO'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 42c5919084ae6ad438d944066edf0e35, type: 2}
-  m_sharedMaterial: {fileID: 21698238849124464, guid: 42c5919084ae6ad438d944066edf0e35,
+  m_fontAsset: {fileID: 11400000, guid: ffc75c53d44cf0743afe85b0f8e841b3, type: 2}
+  m_sharedMaterial: {fileID: 21403489162502560, guid: ffc75c53d44cf0743afe85b0f8e841b3,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7800,7 +7800,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 17
   m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
@@ -8049,8 +8049,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Precip\xEDcios\ns\xE3o\nmortais"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 42c5919084ae6ad438d944066edf0e35, type: 2}
-  m_sharedMaterial: {fileID: 21698238849124464, guid: 42c5919084ae6ad438d944066edf0e35,
+  m_fontAsset: {fileID: 11400000, guid: ffc75c53d44cf0743afe85b0f8e841b3, type: 2}
+  m_sharedMaterial: {fileID: 21403489162502560, guid: ffc75c53d44cf0743afe85b0f8e841b3,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8081,7 +8081,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 17
   m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
@@ -8861,8 +8861,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Colete o lixo eletr\xF4nico "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 42c5919084ae6ad438d944066edf0e35, type: 2}
-  m_sharedMaterial: {fileID: 21698238849124464, guid: 42c5919084ae6ad438d944066edf0e35,
+  m_fontAsset: {fileID: 11400000, guid: ffc75c53d44cf0743afe85b0f8e841b3, type: 2}
+  m_sharedMaterial: {fileID: 21403489162502560, guid: ffc75c53d44cf0743afe85b0f8e841b3,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8893,7 +8893,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 17
   m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
@@ -9223,8 +9223,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Pule e o desative
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 42c5919084ae6ad438d944066edf0e35, type: 2}
-  m_sharedMaterial: {fileID: 21698238849124464, guid: 42c5919084ae6ad438d944066edf0e35,
+  m_fontAsset: {fileID: 11400000, guid: ffc75c53d44cf0743afe85b0f8e841b3, type: 2}
+  m_sharedMaterial: {fileID: 21403489162502560, guid: ffc75c53d44cf0743afe85b0f8e841b3,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -9255,7 +9255,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 17
   m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
@@ -9438,10 +9438,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "movimente o mouse\n e atire com"
+  m_text: 'Movimente o mouse
+
+    e atire com'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 42c5919084ae6ad438d944066edf0e35, type: 2}
-  m_sharedMaterial: {fileID: 21698238849124464, guid: 42c5919084ae6ad438d944066edf0e35,
+  m_fontAsset: {fileID: 11400000, guid: ffc75c53d44cf0743afe85b0f8e841b3, type: 2}
+  m_sharedMaterial: {fileID: 21403489162502560, guid: ffc75c53d44cf0743afe85b0f8e841b3,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -9472,7 +9474,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 17
   m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
@@ -9504,12 +9506,12 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 62.712276, y: 0, z: 0.0000005958451, w: -8.850843}
+  m_margin: {x: 62.712276, y: 14.010765, z: 0.0000005958451, w: -8.850843}
   m_textInfo:
     textComponent: {fileID: 1352334911}
-    characterCount: 30
+    characterCount: 29
     spriteCount: 0
-    spaceCount: 6
+    spaceCount: 5
     wordCount: 6
     linkCount: 0
     lineCount: 2
@@ -9896,31 +9898,6 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 907665583}
-    - target: {fileID: 20800389628127610, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
-        type: 2}
-      propertyPath: orthographic size
-      value: 7.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917281515442936, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917281515442936, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 1523469680609880, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1676595147109878, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1248791888553494, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
   m_IsPrefabAsset: 0
@@ -10404,7 +10381,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -168.34, y: -180.02}
+  m_AnchoredPosition: {x: -167.72, y: -175.1}
   m_SizeDelta: {x: -55, y: -132.20001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2094411605
@@ -10444,10 +10421,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "a recicladora, recebe o lixo \ne faz um filamento"
+  m_text: "Recicle o lixo \ne o transforme\nem filamento"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 42c5919084ae6ad438d944066edf0e35, type: 2}
-  m_sharedMaterial: {fileID: 21698238849124464, guid: 42c5919084ae6ad438d944066edf0e35,
+  m_fontAsset: {fileID: 11400000, guid: ffc75c53d44cf0743afe85b0f8e841b3, type: 2}
+  m_sharedMaterial: {fileID: 21403489162502560, guid: ffc75c53d44cf0743afe85b0f8e841b3,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -10478,8 +10455,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 514
+  m_fontStyle: 17
+  m_textAlignment: 516
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -10510,15 +10487,15 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 62.712276, y: 0, z: 0.0000005958451, w: -8.850843}
+  m_margin: {x: 62.712276, y: 0, z: 29.211262, w: -8.850843}
   m_textInfo:
     textComponent: {fileID: 2094411606}
-    characterCount: 48
+    characterCount: 43
     spriteCount: 0
-    spaceCount: 9
-    wordCount: 9
+    spaceCount: 8
+    wordCount: 8
     linkCount: 0
-    lineCount: 2
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
