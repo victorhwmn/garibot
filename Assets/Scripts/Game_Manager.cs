@@ -30,5 +30,11 @@ public class Game_Manager : MonoBehaviour
         return (totalAmount / totalExisting) * 100f; // temp
         //return (((float) GetTotalAmount() / (float) GetTotalInWorldAmount()) * 100);
     }
+
+    public float ReturnLevelRetrieved()
+    {
+        return (retrieveAmount / totalExisting) * 100f; // temp
+        //return (((float) GetTotalAmount() / (float) GetTotalInWorldAmount()) * 100);
+    }
 }
 

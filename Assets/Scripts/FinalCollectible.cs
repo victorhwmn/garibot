@@ -25,7 +25,7 @@ public class FinalCollectible : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		if (gm.ReturnLevelCompletion() > minPercentage)
+		if (gm.ReturnLevelRetrieved() >= minPercentage)
         {
             sr.enabled = true;
             c2d.enabled = true;

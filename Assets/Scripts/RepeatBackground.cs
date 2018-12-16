@@ -9,9 +9,7 @@ public class RepeatBackground : MonoBehaviour
     private float distPlayer;
     private float copiesDistance = 19f;
 
-    [SerializeField]
     private GameObject previousCopy = null;
-    [SerializeField]
     private GameObject followingCopy = null;
 
     // Use this for initialization

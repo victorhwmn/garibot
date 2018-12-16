@@ -15709,7 +15709,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4917281515442936, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.41
+      value: 1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917281515442936, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 114750445190787220, guid: 466aa10c2376b2943b9a8bbcc39fa76d,
+        type: 2}
+      propertyPath: delayRate
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 466aa10c2376b2943b9a8bbcc39fa76d, type: 2}
